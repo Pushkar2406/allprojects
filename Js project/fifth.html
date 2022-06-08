@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Leap Year</title>
+</head>
+<body>
+	<p>Find Next 20 Leap Year</p>
+
+    <p>Click on button to see next 20 Leap years</p>
+
+    <button onclick="Leapyear()" id="btn5">Click Me</button>
+
+
+<script>
+	function Leapyear() {
+
+    // var year = prompt("please input a year to find out the next 20 years");
+
+    var currentTime = new Date()
+
+    var year = currentTime.getFullYear()
+
+    var counter = 20;
+
+
+
+    while (counter >= 0) {
+
+
+
+        if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)) {
+
+            console.log(year);
+
+            year++;
+
+            counter--;
+
+        }
+
+        else
+
+         {
+
+            year++;
+
+        }
+
+
+
+    }
+
+}
+    	
+</script>
+
+</body>
+</html>

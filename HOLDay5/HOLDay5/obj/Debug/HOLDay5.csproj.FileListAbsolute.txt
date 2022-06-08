@@ -1,0 +1,2 @@
+C:\Users\pushkarjha\Source\Repos\HOLDay5\HOLDay5\obj\Debug\HOLDay5.csproj.AssemblyReference.cache
+C:\Users\pushkarjha\Source\Repos\HOLDay5\HOLDay5\obj\Debug\HOLDay5.csproj.CoreCompileInputs.cache

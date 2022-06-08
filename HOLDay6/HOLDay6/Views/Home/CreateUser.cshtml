@@ -1,0 +1,44 @@
+﻿@model HOLDay6.Models.User
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CreateUser</title>
+</head>
+<body>
+    <div>
+        @{
+            AjaxOptions opt = new AjaxOptions
+            {
+                HttpMethod = "POST",
+                UpdateTargetId = "result"
+            };
+        }
+
+        <h2>Current Users</h2>
+        <div id="result">
+            @Html.Action("GetAllUsers")
+        </div>
+        @using (Ajax.BeginForm("CreateUser", opt))
+        {
+            <p>
+                User Name: @Html.TextBoxFor(user => user.UserName)
+            </p>
+
+            <p>
+                Password: @Html.PasswordFor(user => user.Password)
+            </p>
+            <input type="submit" value="Create User" />
+        }
+
+
+        
+
+    </div>
+</body>
+</html>

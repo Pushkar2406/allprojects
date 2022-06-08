@@ -1,0 +1,55 @@
+﻿@model IEnumerable<User>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<a asp-action="AddUser" class="btn btn-sm btn-primary">Add New User</a>
+
+
+
+<table class="table table-sm table-striped table-bordered m-2">
+    <thead>
+        <tr>
+            <th>UserID</th>
+            <th>UserName</th>
+            <th>Useremail</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var r in Model)
+        {
+            <tr>
+                <td>@r.UserId</td>
+                <td>@r.UserName</td>
+                <td>@r.Useremail</td>
+                <td>
+                    <a asp-action="UpdateUser" asp-route-id="@r.UserId">
+                        @*<img src="/icon/edit.jpg" width="48" height="48" />*@
+                        update
+
+
+
+
+                    </a>
+
+
+
+                </td>
+                <td>
+
+                    <form asp-action="DeleteUser" method="post">
+                        <input type="hidden" value="@r.UserId" name="Id" />
+                        <input type="image" src="/icon/close.jpg" width="48" height="48" />
+                    </form>
+                </td>
+            </tr>
+}
+    </tbody>
+</table>

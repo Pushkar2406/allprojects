@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Object properties</title>
+</head>
+<body>
+	<h1>ES6 Assignment 3</h1>
+	<script>
+		const Order ={
+			id : 'book',
+			title : 'Math',
+			price : '500',
+
+			printOrder(){
+				return this.id + "" + this.title + "" + this.price;
+			}
+			getPrice(){
+				return this.price;
+			}
+
+		};
+
+		const copy = Object.assign({}, Order);
+		Console.Log(copy);
+		Console.Log(Order.getPrice());
+		Console.Log(Order.printOrder());
+
+		
+	</script>
+
+</body>
+</html>

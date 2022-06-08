@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	  <p>Second Program Html</p>
+    <input id="inputnum2" placeholder="Type a number">
+    <button onclick="Sum2()" id="btn2">Click Me</button>
+
+    <script>
+function Sum2() {
+    var num = document.getElementById("inputnum2").value;
+    console.log("the value you gave was:" + num);
+
+    var sum = 0;
+    for (i = 0; i <= num; i++) {
+        if (i % 3 == 0 || i % 5 == 0) {
+            sum = sum + i;
+        }
+    }
+     console.log("The sum of multiples of 3, 5 till " + num + " is: " + sum);
+    alert("The sum of numbers till " + num + " is: " + sum);
+
+}
+
+</script>
+
+
+</body>
+</html>

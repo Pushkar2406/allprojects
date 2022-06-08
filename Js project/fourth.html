@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Head Ratio</title>
+</head>
+<body>
+	<p>Enter Number of flip</p>
+
+    <input id="inputnum4" placeholder="Type number of Flips">
+
+    <button onclick="HeadFrac()" id="btn4">Click Me</button>
+<script>
+	function HeadFrac() {
+
+    var flips = document.getElementById("inputnum4").value;
+
+    var heads = Math.floor((Math.random() * flips) + 1);
+
+    var headRatio = heads / flips;
+
+    console.log("this is headratio : " + headRatio.toFixed(2));
+
+    alert("head ratio is :" + headRatio.toFixed(2));
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
+
+</body>
+</html>

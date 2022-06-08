@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	 <center><h2>1st Assignment of Javascript</h2></center>
+    <center><p>Enter the Number</p></center>
+    <br>
+    <center><input id= "inputnumber" placeholder="Enter Number Here"></center>
+    <br><br>
+    <center><button onclick="Sum1()" id="btn1">Click Me</button></center>
+	<script>
+function Sum1() {
+    var num = document.getElementById("inputnumber").value;
+    console.log("Value enter by user:" + num);
+
+    var sum = 0;
+    for (i = 0; i <= num; i++) {
+        sum = sum + i;
+    }
+    console.log("The sum of numbers " + num + " is: " + sum);
+    alert("The sum of numbers " + num + " is: " + sum);
+}
+ 
+
+</script>
+
+</body>
+</html>

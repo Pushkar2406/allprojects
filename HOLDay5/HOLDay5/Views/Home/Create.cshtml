@@ -1,0 +1,37 @@
+﻿@model HOLDay4.Models.Account
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("CreateAccount", "Home"))
+        {
+
+            <p>
+
+                Account Number: @Html.TextBoxFor(a => a.AccountNumber)
+            </p>
+
+            <p>
+
+                Name: @Html.TextBoxFor(a => a.Name)
+            </p>
+
+            <p>
+                Current Balance: @Html.TextBoxFor(a => a.CurrentBalance)
+            </p>
+
+            <input type="submit" value="Create Account" />
+        }
+
+    </div>
+</body>
+</html>

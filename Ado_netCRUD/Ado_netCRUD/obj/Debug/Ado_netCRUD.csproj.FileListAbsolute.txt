@@ -1,0 +1,7 @@
+C:\Users\pushkarjha\Source\Repos\Ado_netCRUD\Ado_netCRUD\bin\Debug\Ado_netCRUD.exe.config
+C:\Users\pushkarjha\Source\Repos\Ado_netCRUD\Ado_netCRUD\bin\Debug\Ado_netCRUD.exe
+C:\Users\pushkarjha\Source\Repos\Ado_netCRUD\Ado_netCRUD\bin\Debug\Ado_netCRUD.pdb
+C:\Users\pushkarjha\Source\Repos\Ado_netCRUD\Ado_netCRUD\obj\Debug\Ado_netCRUD.csproj.AssemblyReference.cache
+C:\Users\pushkarjha\Source\Repos\Ado_netCRUD\Ado_netCRUD\obj\Debug\Ado_netCRUD.csproj.CoreCompileInputs.cache
+C:\Users\pushkarjha\Source\Repos\Ado_netCRUD\Ado_netCRUD\obj\Debug\Ado_netCRUD.exe
+C:\Users\pushkarjha\Source\Repos\Ado_netCRUD\Ado_netCRUD\obj\Debug\Ado_netCRUD.pdb
